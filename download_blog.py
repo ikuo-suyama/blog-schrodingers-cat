@@ -7,6 +7,7 @@ from urllib.parse import urljoin, urlparse
 BASE_URL = "https://blog.goo.ne.jp/ikuoikuo_2005/"
 START_ARCHIVE_URL = urljoin(BASE_URL, "arcv")
 OUTPUT_DIR = "raw_html"
+POST_SUBDIR_NAME = "ikuoikuo_2005" # Subdirectory name for posts
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
@@ -24,10 +25,12 @@ def download_page(url):
         print(f"Error fetching {url}: {e}")
         return None
 
-def save_html(content, filename):
-    """Saves HTML content to a file."""
-    filepath = os.path.join(OUTPUT_DIR, filename)
+def save_html(content, filename, directory):
+    """Saves HTML content to a file in the specified directory."""
+    filepath = os.path.join(directory, filename)
     try:
+        # Ensure the directory exists before writing
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
         print(f"Saved {filepath}")
@@ -39,13 +42,20 @@ def get_post_filename(url):
     path_parts = urlparse(url).path.strip('/').split('/')
     # Expecting format like /ikuoikuo_2005/e/unique_post_id
     if len(path_parts) >= 3 and path_parts[1] == 'e':
+        # Use only the unique ID part for the filename
         return f"{path_parts[2]}.html"
-    # Fallback if URL structure is different
-    return os.path.basename(urlparse(url).path) + ".html"
+    # Fallback if URL structure is different (less likely for posts)
+    base = os.path.basename(urlparse(url).path)
+    return base + ".html" if base else "unknown_post.html"
 
 def main():
+    # Base output directory
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
+    # Subdirectory for posts
+    post_output_dir = os.path.join(OUTPUT_DIR, POST_SUBDIR_NAME)
+    if not os.path.exists(post_output_dir):
+        os.makedirs(post_output_dir)
 
     current_archive_url = START_ARCHIVE_URL
     processed_archive_urls = set()
@@ -59,6 +69,10 @@ def main():
         if not archive_html:
             print(f"Failed to download archive page: {current_archive_url}, stopping.")
             break
+
+        # Save the current archive page itself
+        archive_filename = f"arcv_{page_num}.html"
+        save_html(archive_html, archive_filename, OUTPUT_DIR) # Save in the root output dir
 
         soup = BeautifulSoup(archive_html, 'html.parser')
 
@@ -92,12 +106,12 @@ def main():
         for title, post_url in post_links:
              absolute_post_url = urljoin(current_archive_url, post_url)
              filename = get_post_filename(absolute_post_url)
-             filepath = os.path.join(OUTPUT_DIR, filename)
+             filepath = os.path.join(post_output_dir, filename)
 
              if not os.path.exists(filepath):
                  post_html = download_page(absolute_post_url)
                  if post_html:
-                     save_html(post_html, filename)
+                     save_html(post_html, filename, post_output_dir)
                      time.sleep(1) # Be polite, wait 1 second between requests
                  else:
                      print(f"Skipping failed download: {absolute_post_url}")
