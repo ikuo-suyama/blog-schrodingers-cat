@@ -20,9 +20,6 @@ def fix_asset_path(path):
         if '?' in path_part:
             path_part = path_part.split('?')[0]
         
-        # Get the filename
-        filename = os.path.basename(path_part)
-        
         # For domain-specific paths, maintain domain structure
         if domain == "blogimg.goo.ne.jp":
             return f"/assets/blogimg.goo.ne.jp{path_part}"
@@ -33,14 +30,35 @@ def fix_asset_path(path):
         elif domain == "u.xgoo.jp":
             return f"/assets/u.xgoo.jp{path_part}"
         else:
-            # For other domains, just use the filename
-            return f"/assets/{filename}"
+            # For other domains, preserve the path structure
+            # Instead of just using the filename, keep the whole path
+            if path_part.startswith('/'):
+                return f"/assets/{domain}{path_part}"
+            else:
+                return f"/assets/{domain}/{path_part}"
     
     # Handle relative paths that should point to assets
     if path.startswith(('/css/', '/js/', '/img/', '/tpl_master/')):
         return f"/assets/blog.goo.ne.jp{path}"
     
     return path
+
+def fix_internal_link(href):
+    """Fix internal blog links to keep the proper structure"""
+    parsed = urlparse(href)
+    path = parsed.path
+    
+    # Do not modify monthly archive links - preserve /m/ directory
+    if '/m/' in path:
+        parts = path.split('/m/')
+        return f"/ikuoikuo_2005/m/{parts[1]}"
+    
+    # Keep article links format
+    if '/e/' in path:
+        parts = path.split('/e/')
+        return f"/ikuoikuo_2005/e/{parts[1]}"
+    
+    return href
 
 def fix_html_paths():
     """Fix paths in HTML files"""
@@ -70,7 +88,7 @@ def fix_html_paths():
             if new_href != original_href:
                 link['href'] = new_href
                 changes_made = True
-                print(f"  Fixed: {original_href} -> {new_href}")
+                print(f"  Fixed asset: {original_href} -> {new_href}")
         
         # Fix asset paths in script tags (JS)
         for script in soup.find_all('script', src=True):
@@ -79,7 +97,7 @@ def fix_html_paths():
             if new_src != original_src:
                 script['src'] = new_src
                 changes_made = True
-                print(f"  Fixed: {original_src} -> {new_src}")
+                print(f"  Fixed asset: {original_src} -> {new_src}")
         
         # Fix asset paths in img tags
         for img in soup.find_all('img', src=True):
@@ -88,7 +106,18 @@ def fix_html_paths():
             if new_src != original_src:
                 img['src'] = new_src
                 changes_made = True
-                print(f"  Fixed: {original_src} -> {new_src}")
+                print(f"  Fixed asset: {original_src} -> {new_src}")
+        
+        # Fix internal links in a tags
+        for a in soup.find_all('a', href=True):
+            original_href = a['href']
+            # Only fix internal blog links
+            if 'ikuoikuo_2005' in original_href or '/m/' in original_href or '/e/' in original_href:
+                new_href = fix_internal_link(original_href)
+                if new_href != original_href:
+                    a['href'] = new_href
+                    changes_made = True
+                    print(f"  Fixed link: {original_href} -> {new_href}")
         
         # Save the modified file if changes were made
         if changes_made:
