@@ -7,6 +7,7 @@ import glob
 # ディレクトリパス
 HTML_DIRS = [
     "local_html/ikuoikuo_2005/m",  # 月別アーカイブ
+    "local_html/ikuoikuo_2005/e"   # 記事
 ]
 
 def fix_additional_icon_paths(html_content):
@@ -40,19 +41,19 @@ def fix_additional_icon_paths(html_content):
          r'<img alt="" src="/assets/u.xgoo.jp/img/sv/house.svg"/>'),
         
         # お知らせセクションのアイコン - 正しいパスはimg/emojiではなくimg_emoji
-        (r'src="/assets/blogimg\.goo\.ne\.jp/img_emoji/star\.gif"', 
+        (r'src="/assets/blogimg\.goo\.ne\.jp/user_image/path/star\.gif"', 
          r'src="/assets/blogimg.goo.ne.jp/img_emoji/star.gif"'),
         
-        (r'src="/assets/blogimg\.goo\.ne\.jp/img_emoji/m_0148\.gif"', 
+        (r'src="/assets/blogimg\.goo\.ne\.jp/user_image/path/m_0148\.gif"', 
          r'src="/assets/blogimg.goo.ne.jp/img_emoji/m_0148.gif"'),
         
-        (r'src="/assets/blogimg\.goo\.ne\.jp/img_emoji/m_0146\.gif"', 
+        (r'src="/assets/blogimg\.goo\.ne\.jp/user_image/path/m_0146\.gif"', 
          r'src="/assets/blogimg.goo.ne.jp/img_emoji/m_0146.gif"'),
         
-        (r'src="/assets/blogimg\.goo\.ne\.jp/img_emoji/m_0001\.gif"', 
+        (r'src="/assets/blogimg\.goo\.ne\.jp/user_image/path/m_0001\.gif"', 
          r'src="/assets/blogimg.goo.ne.jp/img_emoji/m_0001.gif"'),
         
-        (r'src="/assets/blogimg\.goo\.ne\.jp/img_emoji/m_0244\.gif"', 
+        (r'src="/assets/blogimg\.goo\.ne\.jp/user_image/path/m_0244\.gif"', 
          r'src="/assets/blogimg.goo.ne.jp/img_emoji/m_0244.gif"'),
         
         # プロフィールの画像
