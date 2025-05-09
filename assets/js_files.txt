@@ -1,0 +1,12 @@
+//adcdn.goo.ne.jp/images/js/smarttag2.js
+//b.st-hatena.com/js/bookmark_button.js
+//c.amazon-adsystem.com/aax2/apstag.js
+//log000.goo.ne.jp/js/VLTraceDMD.js
+//platform.twitter.com/widgets.js
+//u.xgoo.jp/jquery/1.8.js
+//u.xgoo.jp/onegoo/js/script-1.0.0.js
+/tpl_master/js/d3f38a909b9b419b014f0989606997f2.js
+https://blog.goo.ne.jp/tpl_master/js/d3f38a909b9b419b014f0989606997f2.js
+https://log000.goo.ne.jp/js/VLTraceDMD.js
+https://u.xgoo.jp/jquery/1.8.js
+https://u.xgoo.jp/onegoo/js/script-1.0.0.js
