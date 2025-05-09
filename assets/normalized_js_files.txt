@@ -1,20 +1,20 @@
-//adcdn.goo.ne.jp/images/js/smarttag2.js
-//b.st-hatena.com/js/bookmark_button.js
-//c.amazon-adsystem.com/aax2/apstag.js
-//log000.goo.ne.jp/js/VLTraceDMD.js
-//platform.twitter.com/widgets.js
-//u.xgoo.jp/jquery/1.8.js
-//u.xgoo.jp/onegoo/js/script-1.0.0.js
-//www.googletagmanager.com/ns.html?id=GTM-NCR8MJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js
-/js/jquery/gjquery.js?24c1137b7
-/tpl_master/js/d3f38a909b9b419b014f0989606997f2.js
+https://adcdn.goo.ne.jp/images/js/smarttag2.js
+https://b.st-hatena.com/js/bookmark_button.js
+https://blog.goo.ne.jp/js/jquery/gjquery.js?24c1137b7
 https://blog.goo.ne.jp/js/jquery/gjquery.js?24c1137b7
 https://blog.goo.ne.jp/tpl_master/js/d3f38a909b9b419b014f0989606997f2.js
+https://blog.goo.ne.jp/tpl_master/js/d3f38a909b9b419b014f0989606997f2.js
+https://c.amazon-adsystem.com/aax2/apstag.js
 https://i.xgoo.jp/gb25/js/library/jquery.color-2.1.2.min.js?24c1137b7
 https://i.xgoo.jp/gb25/js/library/lottie.min.js?24c1137b7
 https://i.xgoo.jp/gb25/js/pc/reaction.js?24c1137b7
 https://i.xgoo.jp/gb25/js/sp/gb_font_color.js?24c1137b7
 https://log000.goo.ne.jp/js/VLTraceDMD.js
+https://log000.goo.ne.jp/js/VLTraceDMD.js
+https://platform.twitter.com/widgets.js
+https://u.xgoo.jp/jquery/1.8.js
 https://u.xgoo.jp/jquery/1.8.js
 https://u.xgoo.jp/onegoo/js/script-1.0.0.js
+https://u.xgoo.jp/onegoo/js/script-1.0.0.js
+https://www.googletagmanager.com/ns.html?id=GTM-NCR8MJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js
 https://www.googletagmanager.com/ns.html?id=GTM-NCR8MJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js

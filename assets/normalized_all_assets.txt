@@ -1,9 +1,20 @@
-//blogimg.goo.ne.jp/img_emoji/m_0151.gif
-//u.xgoo.jp/img/sns/button/facebook.png
-//u.xgoo.jp/img/sns/button/hatena.png
-//u.xgoo.jp/img/sns/button/line.png
-/img/static/global/noimage_w43_entry.jpg
 http://u.xgoo.jp/img/sns/blog.png
+https://adcdn.goo.ne.jp/images/0common/blog_ad.min.css
+https://adcdn.goo.ne.jp/images/js/smarttag2.js
+https://b.st-hatena.com/js/bookmark_button.js
+https://blog.goo.ne.jp/css/user_template/left_2c-v2.css
+https://blog.goo.ne.jp/css/user_template/left_2c-v2.css
+https://blog.goo.ne.jp/css/user_template/onegoo.css?24c1137b7
+https://blog.goo.ne.jp/css/user_template/onegoo.css?24c1137b7
+https://blog.goo.ne.jp/css/user_template/static-v2.css?24c1137b7
+https://blog.goo.ne.jp/css/user_template/static-v2.css?24c1137b7
+https://blog.goo.ne.jp/img/static/global/noimage_w43_entry.jpg
+https://blog.goo.ne.jp/js/jquery/gjquery.js?24c1137b7
+https://blog.goo.ne.jp/js/jquery/gjquery.js?24c1137b7
+https://blog.goo.ne.jp/tpl_master/css/d3f38a909b9b419b014f0989606997f2.css
+https://blog.goo.ne.jp/tpl_master/css/d3f38a909b9b419b014f0989606997f2.css
+https://blog.goo.ne.jp/tpl_master/js/d3f38a909b9b419b014f0989606997f2.js
+https://blog.goo.ne.jp/tpl_master/js/d3f38a909b9b419b014f0989606997f2.js
 https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_square_m/v1/user_image/05/d4/29efc4888193ab751c9633f3092c3e4e.jpg
 https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_square_m/v1/user_image/2c/c1/f21a2dd24f47397cd674b93f7ef260f8.jpg
 https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_square_m/v1/user_image/31/5d/e20301b3cb57930347ba58442167f3ae.jpg
@@ -34,6 +45,7 @@ https://blogimg.goo.ne.jp/img_emoji/kaeru_shock1.gif
 https://blogimg.goo.ne.jp/img_emoji/kuma_fly.gif
 https://blogimg.goo.ne.jp/img_emoji/m_0146.gif
 https://blogimg.goo.ne.jp/img_emoji/m_0148.gif
+https://blogimg.goo.ne.jp/img_emoji/m_0151.gif
 https://blogimg.goo.ne.jp/img_emoji/m_0151.gif
 https://blogimg.goo.ne.jp/img_emoji/m_0244.gif
 https://blogimg.goo.ne.jp/img_emoji/niwatori.gif
@@ -151,7 +163,19 @@ https://blogimg.goo.ne.jp/user_image/7c/02/ab360e25a73da4b8bd6bd8ba88168285.jpg
 https://blogimg.goo.ne.jp/user_image/7c/69/554daf55190423214455a899e9918e54.jpg
 https://blogimg.goo.ne.jp/user_image/7f/7a/ed6bafd724e8d5023291439cea246469.jpg
 https://blogimg.goo.ne.jp/user_photo/bc/d7558152496caf3ef82cd5ff1730ee3f.jpg
+https://c.amazon-adsystem.com/aax2/apstag.js
+https://i.xgoo.jp/gb25/js/library/jquery.color-2.1.2.min.js?24c1137b7
+https://i.xgoo.jp/gb25/js/library/lottie.min.js?24c1137b7
+https://i.xgoo.jp/gb25/js/pc/reaction.js?24c1137b7
+https://i.xgoo.jp/gb25/js/sp/gb_font_color.js?24c1137b7
+https://i.xgoo.jp/gb25/styles/pc/reaction.css?24c1137b7
 https://i.xgoo.jp/img/icon/x_logo.png
+https://log000.goo.ne.jp/js/VLTraceDMD.js
+https://log000.goo.ne.jp/js/VLTraceDMD.js
+https://platform.twitter.com/widgets.js
+https://u.xgoo.jp/img/sns/button/facebook.png
+https://u.xgoo.jp/img/sns/button/hatena.png
+https://u.xgoo.jp/img/sns/button/line.png
 https://u.xgoo.jp/img/sns/goo.svg
 https://u.xgoo.jp/img/sv/blog.svg
 https://u.xgoo.jp/img/sv/dictionary.svg
@@ -160,3 +184,9 @@ https://u.xgoo.jp/img/sv/house.svg
 https://u.xgoo.jp/img/sv/mail.svg
 https://u.xgoo.jp/img/sv/news.svg
 https://u.xgoo.jp/img/sv/oshiete.svg
+https://u.xgoo.jp/jquery/1.8.js
+https://u.xgoo.jp/jquery/1.8.js
+https://u.xgoo.jp/onegoo/js/script-1.0.0.js
+https://u.xgoo.jp/onegoo/js/script-1.0.0.js
+https://www.googletagmanager.com/ns.html?id=GTM-NCR8MJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js
+https://www.googletagmanager.com/ns.html?id=GTM-NCR8MJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js

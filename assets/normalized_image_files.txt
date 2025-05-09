@@ -1,9 +1,5 @@
-//blogimg.goo.ne.jp/img_emoji/m_0151.gif
-//u.xgoo.jp/img/sns/button/facebook.png
-//u.xgoo.jp/img/sns/button/hatena.png
-//u.xgoo.jp/img/sns/button/line.png
-/img/static/global/noimage_w43_entry.jpg
 http://u.xgoo.jp/img/sns/blog.png
+https://blog.goo.ne.jp/img/static/global/noimage_w43_entry.jpg
 https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_square_m/v1/user_image/05/d4/29efc4888193ab751c9633f3092c3e4e.jpg
 https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_square_m/v1/user_image/2c/c1/f21a2dd24f47397cd674b93f7ef260f8.jpg
 https://blogimg.goo.ne.jp/image/upload/f_auto,q_auto,t_image_square_m/v1/user_image/31/5d/e20301b3cb57930347ba58442167f3ae.jpg
@@ -34,6 +30,7 @@ https://blogimg.goo.ne.jp/img_emoji/kaeru_shock1.gif
 https://blogimg.goo.ne.jp/img_emoji/kuma_fly.gif
 https://blogimg.goo.ne.jp/img_emoji/m_0146.gif
 https://blogimg.goo.ne.jp/img_emoji/m_0148.gif
+https://blogimg.goo.ne.jp/img_emoji/m_0151.gif
 https://blogimg.goo.ne.jp/img_emoji/m_0151.gif
 https://blogimg.goo.ne.jp/img_emoji/m_0244.gif
 https://blogimg.goo.ne.jp/img_emoji/niwatori.gif
@@ -152,6 +149,9 @@ https://blogimg.goo.ne.jp/user_image/7c/69/554daf55190423214455a899e9918e54.jpg
 https://blogimg.goo.ne.jp/user_image/7f/7a/ed6bafd724e8d5023291439cea246469.jpg
 https://blogimg.goo.ne.jp/user_photo/bc/d7558152496caf3ef82cd5ff1730ee3f.jpg
 https://i.xgoo.jp/img/icon/x_logo.png
+https://u.xgoo.jp/img/sns/button/facebook.png
+https://u.xgoo.jp/img/sns/button/hatena.png
+https://u.xgoo.jp/img/sns/button/line.png
 https://u.xgoo.jp/img/sns/goo.svg
 https://u.xgoo.jp/img/sv/blog.svg
 https://u.xgoo.jp/img/sv/dictionary.svg
