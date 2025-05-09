@@ -1,0 +1,786 @@
+@charset "UTF-8";
+/*-- INDIVIDUAL CSS Document for goo blog modulized templates new template --*/
+/*-- ■SECTION 010 全体設定 --*/
+/*-----------------------------------------------------------------
+ページ全体の背景色・背景画像の設定
+------------------------------------------------------------------*/
+body {
+color:#606060;  /*-- 文字色 --*/
+}
+/*-----------------------------------------------------------------
+リンク文字色の基本設定
+------------------------------------------------------------------*/
+/*-- 通常 --*/
+a {
+text-decoration:none; /*-- 文字装飾 --*/
+color:#31a6f7; /*-- 文字色-- */
+}
+/*-- リンク先を訪れたことがある時 --*/
+a:visited {
+text-decoration:none;/*-- 文字装飾 --*/
+color:#31a6f7;  /*-- 文字色 --*/
+}
+/*-- マウスオーバー時 --*/
+a:hover {
+text-decoration:underline; /*-- 文字装飾 --*/
+color:#999999; /*-- 文字色 --*/
+}
+/*-- マウスクリック時 --*/
+a:active {
+color:#999999; /*-- 文字色 --*/
+}
+/*-----------------------------------------------------------------
+不使用拡張部分
+--使用したい部分をコメントアウトまたは削除します。
+------------------------------------------------------------------*/
+/*-- #title-banner-top, --*/
+/*-- #title-banner-bottom, --*/
+#main-top,
+/*-- #main-bottom,--*/
+/*-- .content-top,--*/
+/*-- .content-bottom,--*/
+#footer,
+.mod-entry-set-top,
+.mod-entry-set-bottom,
+.mod-comments-top,
+.mod-comments-bottom,
+.comment-list-top,
+.comment-list-bottom,
+.comment-form-top,
+.comment-form-bottom,
+.mod-trackbacks-top,
+.mod-trackbacks-bottom,
+.trackback-list-top,
+.trackback-list-bottom ,
+.sidebar-top,
+.sidebar-bottom,
+.module-top,
+.module-bottom {
+display:none;
+}
+/*-- ■SECTION 020 レイアウト設定 --*/
+/*-----------------------------------------------------------------
+サイドバー＋メイン全体の設定
+------------------------------------------------------------------*/
+#container {
+width:100%;
+margin:0 auto;
+background: #FFF;
+margin-top: 18px;
+}
+#main {
+padding: 60px 0;
+width: 90%;
+margin: 0 auto;
+}
+/*-- ■SECTION 030 #title-banner 設定 --*/
+/*-----------------------------------------------------------------
+タイトルバナーの設定
+------------------------------------------------------------------*/
+/*-- タイトルバナー外枠の設定 --*/
+#title-banner {
+background:transparent;
+}
+/*-- タイトルバナー上部の設定 --*/
+/*-- タイトルバナー内部の設定 --*/
+#title-banner-body {
+width:100%;
+background-image:url(/img/template/user/1228/header-img04.jpg);
+background-position: center;
+background-repeat:no-repeat; 
+height:280px;
+}
+/*-- ブログタイトルの開始位置の設定 --*/
+#title-banner-body #title-banner-set {
+padding: 40px 0 0 0;
+margin: 0 auto;
+width: 80%;
+}
+/*-- タイトルバナー下部の設定 --*/
+/*-- ブログタイトル文字の基本設定 --*/
+#title-banner-body #title-banner-set h1 {
+font-size:187%;
+font-weight: normal;
+text-align:left;
+margin-bottom:5px;
+}
+/*-- ブログタイトル文字の設定（文字色、リンク時装飾） --*/
+#title-banner-body #title-banner-set h1 a {
+color:#606060;
+text-decoration:none;
+}
+/*-- ブログタイトル文字の設定（マウスオーバー／マウスクリック時の文字色、リンク装飾） --*/
+#title-banner-body #title-banner-set h1 a:hover,
+#title-banner-body #title-banner-set h1 a:active {
+text-decoration:none;
+}
+/*-- ブログ概要の設定 --*/
+#title-banner-body #title-banner-set h2 {
+font-size:100%;
+font-weight:normal;
+padding:5px 0;
+}
+
+
+/*-- 2017　見出し調整 --*/
+/*-- ブログタイトル文字の基本設定 --*/
+#title-banner-body #title-banner-set .blog-title {
+font-size:187%;
+font-weight: normal;
+text-align:left;
+margin:0;
+margin-bottom:5px;
+padding:0;
+}
+/*-- ブログタイトル文字の設定（文字色、リンク時装飾） --*/
+#title-banner-body #title-banner-set .blog-title a {
+color:#606060;
+text-decoration:none;
+}
+/*-- ブログタイトル文字の設定（マウスオーバー／マウスクリック時の文字色、リンク装飾） --*/
+#title-banner-body #title-banner-set .blog-title a:hover,
+#title-banner-body #title-banner-set .blog-title a:active {
+text-decoration:none;
+}
+/*-- ブログ概要の設定 --*/
+#title-banner-body #title-banner-set .blog-description {
+font-size:100%;
+font-weight:normal;
+padding:5px 0;
+}
+/*-- 2017　見出し調整 --*/
+
+
+/*-- ■SECTION 040 #main 設定 --*/
+/*-----------------------------------------------------------------
+サイドバー＋メイン全体の下部の設定
+------------------------------------------------------------------*/
+#main-bottom {
+background:transparent;
+}
+/*-- ■SECTION 050 #main 内レイアウト設定 --*/
+/*-----------------------------------------------------------------
+サイドバー全体、メイン全体の設定
+------------------------------------------------------------------*/
+/*-- メインの設定（2カラム時のみ） --*/
+#center-2c {
+}
+/*-- メインの設定（3カラム時のみ） --*/
+#center-3c {
+}
+/*-- メインの設定（外側・共通） --*/
+#center {
+}
+/*-- メインの設定（内側・共通）--*/
+#in-center {
+/*-- メインコンテンツエリアの背景色 --*/
+background:#ffffff;
+}
+/*-- サイドバー全体の設定 --*/
+#side-a,#side-b {
+}
+/*-- ■SECTION 060 #center-2c/3c 設定 --*/
+/*-----------------------------------------------------------------
+メインのレイアウトの設定
+------------------------------------------------------------------*/
+/*-- カラム間のマージン設定（2カラムの場合）--*/
+.content-2c {
+}
+/*-- カラム間のマージン設定（3カラムの場合）--*/
+.content-3c {
+margin:0 5px;
+}
+/*-- メイン上部の設定 --*/
+.content-top {
+}
+.content-body {
+}
+/*-- メイン下部の設定 --*/
+.content-bottom {
+height:10px;
+}
+/*-- ■SECTION 070 エントリー設定 --*/
+/*-----------------------------------------------------------------
+記事の設定
+------------------------------------------------------------------*/
+/*-- 記事の設定（外側） --*/
+.mod-entry-set {
+}
+.mod-entry-set-top {
+}
+.mod-entry-set-top div.lt {
+}
+.mod-entry-set-top div.rt {
+}
+.mod-entry-set-bottom {
+}
+.mod-entry-set-bottom div.lb {
+}
+.mod-entry-set-bottom div.rb {
+}
+/*-- 記事の設定（内側）--*/
+.entry {
+margin-bottom: 45px;
+}
+/*-- 記事上部の設定 --*/
+/*-- ↓記事タイトル・投稿日時|カテゴリーの背景を共通で設定する場合はここを使用 --*/
+.entry-top {
+}
+/*-- 記事タイトルの設定 --*/
+.entry-top h3 {
+font-size: 150%;
+}
+.entry-top h3 a {
+color: #606060 !important;
+text-decoration:none;
+}
+.entry-top h3 a:visited {
+color:#31a6f7;
+}
+.entry-top h3 a:hover {
+color:#31a6f7 !important;
+text-decoration:underline;
+}
+
+
+/*-- 2017　見出し調整 --*/
+/*-- 記事タイトルの設定 --*/
+.entry-top .entry-title,.entry-top .arcv-title,.entry-list-title {
+font-size: 150%;
+}
+.entry-top .entry-title a,.entry-top .arcv-title a,.entry-list-title a {
+color: #606060 !important;
+text-decoration:none;
+}
+.entry-top .entry-title a:visited,.entry-top .arcv-title a:visited,.entry-list-title a:visited {
+color:#31a6f7;
+}
+.entry-top .entry-title a:hover,.entry-top .arcv-title a:hover,.entry-list-title a:hover {
+color:#31a6f7 !important;
+text-decoration:underline;
+}
+.entry-list-title {
+padding-bottom:10px;
+}
+/*-- 2017　見出し調整 --*/
+
+
+
+/*-- 投稿日時|カテゴリーの設定 --*/
+.entry-top-info {
+margin:0 0 35px 0;
+}
+.entry-top-info span.entry-top-info-time {
+}
+.entry-top-info span.entry-top-info-category {
+}
+/*-- 記事上部の設定ここまで --*/
+/*-- 記事部分の設定 --*/
+.entry-body {
+}
+/*-- 記事貼り付け画像の設定 --*/
+/*-- 画像の周りの間隔の設定（サムネイルになる部分） --*/
+.entry-body-image {
+margin:20px auto 10px;
+}
+/*-- 画像にリンクを貼った時の設定（通常時） --*/
+.entry-body-image a img,.entry-body-text a img {
+border-color:#666666;
+}
+/*-- 画像にリンクを貼った時の設定（リンク先を訪問したことがある時） --*/
+.entry-body-image a:visited img,.entry-body-text a:visited img {
+border-color:#666666;
+}
+/*-- 画像にリンクを貼った時の設定（カーソルをおいた時） --*/
+.entry-body-image a:hover img,.entry-body-text a:hover img {
+border-color:#666666;
+}
+/*-- 記事本文の設定 --*/
+.entry-body-text {
+margin-bottom:35px;
+}
+/*-- 記事部分の設定ここまで --*/
+/*-- 記事下部の設定 --*/
+.entry-bottom {
+text-align:right;
+}
+/*-- 記事下部コメント（）・トラックバック（）の設定 --*/
+.entry-bottom-info {
+}
+/*-- 記事下部の設定ここまで --*/
+/*-----------------------------------------------------------------
+コメント欄の設定
+------------------------------------------------------------------*/
+/*-- コメント欄全体の設定 --*/
+#mod-comments {
+margin-bottom:45px;
+}
+/*-- コメント欄タイトルの設定 --*/
+#mod-comments h3{
+font-size:125%;
+color:#31A6F7;
+}
+/*-- 各コメントの設定 --*/
+#mod-comments .comment-list-body{
+margin-bottom:20px;
+}
+#mod-comments .comment-list-body dl {
+background:#ffffff;
+margin-bottom:20px;
+}
+/*-- 各コメントタイトルの設定 --*/
+span.comment-list-title {
+font-weight:bold;
+color:#31A6F7;
+}
+/*-- 各コメント日付の設定 --*/
+.comment-list-body dl dd.comment-list-date {
+}
+.comment-input dl {
+}
+.comment-submit input {
+}
+/*-- gooIDを持っている人のみコメント可の場合の設定 --*/
+.comment-gooid {
+margin-bottom:20px;
+padding:0 10px 10px 10px;
+border-bottom:dashed 1px #31A6F7; 
+}
+.comment-gooid dl {
+}
+.comment-gooid dl dt {
+font-weight:bold;
+}
+.comment-gooid dl dd {
+}
+.comment-login-link {
+margin:10px 0;
+}
+/*-- gooIDを持っている人のみコメント可の場合の設定ここまで --*/
+/*-- コメント欄注意文の設定 --*/
+.comment-alert {
+margin:10px 0;
+}
+.comment-alert,.comment-gooid{
+color:#333333;
+}
+.comment-alert .comment-list-none,.comment-alert .comment-precheck{
+}
+.comment-alert span.comment-login {
+color:#CC3333;
+}
+.comment-alert span.comment-list-error {
+color:#CC3333;
+font-weight:bold;
+padding:5px;
+border:solid 1px #CC3333;
+margin:10px 0;
+}
+/*-- コメント欄注意文の設定ここまで --*/
+/*-----------------------------------------------------------------
+トラックバック欄の設定
+------------------------------------------------------------------*/
+/*-- トラックバック欄全体の設定 --*/
+#mod-trackbacks {
+margin-bottom:45px;
+}
+/*-- トラックバック欄タイトルの設定 --*/
+#mod-trackbacks h3 {
+font-size:125%;
+color:#31A6F7;
+}
+/*-- トラックバックURL欄設定 --*/
+#mod-trackbacks .trackback-ping-url {
+margin:20px 0 0 0;
+font-weight:bold;
+text-align:center;
+}
+/*-- トラックバックURL文字設定 --*/
+#mod-trackbacks .trackback-ping-url dd input {
+font-weight:bold;
+text-align:center;
+}
+/*-- トラックバックを承認制にしている場合の注意書き設定 --*/
+#mod-trackbacks .trackback-filter {
+}
+#mod-trackbacks .trackback-filter ul{
+margin: 5px 20px 10px;
+}
+#mod-trackbacks .trackback-filter ul li {
+list-style:disc;
+list-style-position:outside;
+line-height:1.25;
+}
+/*-- トラックバックを承認制にしている場合の注意書き設定ここまで --*/
+/*-- 各トラックバックの設定 --*/
+#mod-trackbacks .trackback-list-body dl {
+padding:10px;
+border:solid 1px #6ca8d6;
+margin-bottom:10px;
+}
+#mod-trackbacks .trackback-list-body dl dt {
+color:#333333;
+}
+#mod-trackbacks .trackback-list-body dl dt.trackback-list-title {
+color:#31A6F7;
+font-weight:bold;
+}
+#mod-trackbacks .trackback-list-body dl dt a {
+font-weight:bold;
+color:#31A6F7;
+text-decoration:underline;
+}
+#mod-trackbacks .trackback-list-body dl dt a:visited {
+color:#31A6F7;;
+text-decoration:underline;
+}
+#mod-trackbacks .trackback-list-body dl dt a:hover {
+color:#31A6F7;;
+text-decoration:none;
+}
+/*-- 各トラックバックの設定ここまで --*/
+/*-- トラックバック注意文の設定 --*/
+#mod-trackbacks .trackback-alert {
+margin:10px 0 20px;
+text-align:center;
+}
+#mod-trackbacks .trackback-alert .trackback-precheck{
+padding-top:10px;
+}
+/*-- トラックバック注意文の設定ここまで --*/
+/*-----------------------------------------------------------------
+次へ・前へ　部分の設定
+------------------------------------------------------------------*/
+#mod-prev-next {
+margin-bottom:45px;
+padding:5px;
+}
+/*-- ■SECTION 080 スポンサー誘導枠設定 --*/
+/*-----------------------------------------------------------------
+スポンサー誘導枠全体の設定
+------------------------------------------------------------------*/
+.mod-entry-set-goo-ad {
+margin-top:20px;
+margin-bottom:45px;
+text-align:center;
+}
+/*-- 広告背景色 --*/
+.gooAd {
+margin:0;
+}
+.gooAd td {
+}
+td.gooAd_sponsor_td {
+}
+td.gooAd_title_td {
+}
+td.gooAd_url_td {
+}
+td.gooAd_text_td {
+}
+.gooAd_text {
+}
+td.gooAd_btm_td {
+}
+/*-- スポンサーリンク文字 --*/
+a.gooAd_sponsor {
+}
+/*-- タイトルリンク文字 --*/
+a.gooAd_title {
+font-weight:bold;
+}
+a:visited.gooAd_title {
+font-weight:bold;
+}
+/*-- URLリンク文字 --*/
+a.gooAd_url {
+}
+a:visited.gooAd_url {
+}
+/*-- テキストリンク文字 --*/
+div.gooAd_text_td {
+line-height:1.1;
+}
+a.gooAd_text {
+}
+a:visited.gooAd_text {
+}
+/*-- リンク範囲拡大 --*/
+.gooAd_title_td A,
+.gooAd_url_td A,
+.gooAd_text_td A {
+text-decoration:none;
+}
+/*-- ■SECTION 090 #sidebar 設定 --*/
+/*-----------------------------------------------------------------
+サイドバー全体の設定
+------------------------------------------------------------------*/
+.sidebar {	
+}
+/*-- ■SECTION 100 サイドバーモジュール共通設定 --*/
+/*-----------------------------------------------------------------
+サイドバーモジュール共通設定
+--.module共通設定はモジュールごとにデザインを変える場合でも、
+--必ずセットしてください。
+------------------------------------------------------------------*/
+/*-- モジュール内の間隔の設定 --*/
+.module-body {
+font-size:88%;
+}
+/*-- モジュール内リスト文の設定 --*/
+.module ul li {
+text-align:left;
+padding-bottom:5px;
+}
+/*-- モジュール内定義リストの設定 --*/
+.module dl dt {
+margin-right: 5px;
+font-weight: bold;
+}
+.module dl dd {
+}
+/*-- モジュール内定義リストの設定ここまで --*/
+/*-- モジュール内区切り線の設定 --*/
+.module-body hr {
+height:1px;
+background-color:#FFF;
+border:0px;
+}
+/*-- モジュール内リンク文字の設定ここまで --*/
+/*-- ２カラムのサイドバーor３カラムの左サイドバー共通設定 --*/
+/*-- 全体の設定 --*/
+#side-a	{
+}
+/*-- 各モジュールの設定 --*/
+#side-a .module {
+margin-bottom: 25px;
+}
+/*-- 各モジュール上部の設定 --*/
+#side-a .module .module-top {
+}
+/*-- 各モジュール内部の設定 --*/
+#side-a .module .module-body {
+}
+/*-- 各モジュール下部の設定 --*/
+#side-a .module .module-bottom {
+}
+/*-- 各モジュールタイトルの設定 --*/
+#side-a .module h4 {
+padding: 15px 0;
+margin-bottom: 15px;
+font-weight: bold;
+font-size: 100%;
+border-top: 1px #afafaf dotted;
+border-bottom: 1px #afafaf dotted;
+}
+
+
+/*-- 2017　見出し調整 --*/
+/*-- 各モジュールタイトルの設定 --*/
+#side-a .module .sidebar-text {
+padding: 15px 0;
+margin-bottom: 15px;
+font-weight: bold;
+font-size: 100%;
+border-top: 1px #afafaf dotted;
+border-bottom: 1px #afafaf dotted;
+}
+/*-- 2017　見出し調整 --*/
+
+
+/*-- ３カラムの右サイドバー共通設定 --*/
+/*-- 全体の設定 --*/
+#side-b{
+}
+/*-- 各モジュールの設定 --*/
+#side-b .module {
+margin-bottom: 25px;
+}
+/*-- 各モジュール上部の設定 --*/
+#side-b .module .module-top {
+}
+/*-- 各モジュール内部の設定 --*/
+#side-b .module-body {
+}
+/*-- 各モジュールタイトルの設定 --*/
+#side-b .module h4 {
+padding: 15px 0;
+margin-bottom: 15px;
+font-weight: bold;
+font-size: 100%;
+border-top: 1px #afafaf dotted;
+border-bottom: 1px #afafaf dotted;
+}
+
+
+/*-- 2017　見出し調整 --*/
+/*-- 各モジュールタイトルの設定 --*/
+#side-b .module .sidebar-text {
+padding: 15px 0;
+margin-bottom: 15px;
+font-weight: bold;
+font-size: 100%;
+border-top: 1px #afafaf dotted;
+border-bottom: 1px #afafaf dotted;
+}
+/*-- 2017　見出し調整 --*/
+
+
+/*-- ■SECTION 110 サイドバーモジュール個別設定 ■ --*/
+/*-----------------------------------------------------------------
+サイドバー／モジュールの各個別要素の設定
+------------------------------------------------------------------*/
+/*-- お知らせ【PR】 --*/
+#mod-advertising {}
+/*-- プロフィール --*/
+#mod-profile{}
+/*-- 携帯 --*/
+#mod-mobile {
+}
+#mod-mobile ul li{
+text-align:center;
+}
+/*-- 最新記事 --*/
+#mod-recent-entries{}
+/*-- カテゴリー --*/
+#mod-categories {}
+/*-- ログイン --*/
+#mod-login {}
+#mod-login ul li {
+border:none;
+padding:0;
+}
+/*-- 最新コメント --*/
+#mod-recent-comments {}
+/*-- 最新トラックバック --*/
+#mod-recent-trackbacks {}
+/*-- カレンダー --*/
+#mod-cal-table .mod-cal-caption {
+color:#31A6F7;
+padding:2px;
+font-weight:bold;
+}
+#mod-cal-table .mod-cal-week {
+font-weight: normal;
+}
+.mod-cal-day-lin-td {
+}
+.mod-cal-day-lin-td:hover {
+}
+#mod-cal-table th,#mod-cal-table td {
+padding:1px;
+text-align:center;
+vertical-align:middle;
+}
+/*-- バックナンバー --*/
+#mod-back-numbers-scroll {}
+/*-- スクロールあり --*/
+#mod-back-numbers-scroll .module-body {
+border:solid 1px #fff;
+}
+/*-- スクロールなし --*/
+#mod-back-numbers-noscroll .module-body {
+padding:15px 15px 20px
+}
+/*-- ブックマーク --*/
+#mod-bookmarks .mod-boo-name {}
+/*-- goo おすすめ --*/
+#mod-goo-recommends li {
+border:none;
+}
+/*-- RSS/gooブログ --*/
+#mod-powered-by {
+padding:10px;
+}
+/*-- フォントサイズ変更 --*/
+#font-size-changer {}
+#font-resizer ul li {
+background:none;
+padding:0;
+text-align:center;
+border:none;
+}
+/*-----------------------------------------------------------------
+メインエリアにオリジナルモジュールを配置した時の設定
+------------------------------------------------------------------*/
+/*-- オリジナルモジュール全体の設定 --*/
+#mod-freearea-main {
+margin:0 0 20px 0;
+}
+#mod-freearea-main .mod-entry-set-top {
+}
+#mod-freearea-main .entry {
+}
+/*-- オリジナルモジュール上部の設定 --*/
+#mod-freearea-main .entry .entry-top {
+}
+/*-- オリジナルモジュールタイトルの設定 --*/
+#mod-freearea-main .entry .entry-top h3 {
+font-size:125%;
+color:#31A6F7;
+}
+
+/*-- 2017　見出し調整 --*/
+.sleep-ad-title {
+font-size:125%;
+color:#31A6F7;
+font-weight:bold;
+}
+/*-- 2017　見出し調整 --*/
+
+
+/*-- オリジナルモジュール内部の設定 --*/
+#mod-freearea-main .entry .entry-body {
+word-break:break-all;
+border:none;
+}
+/*-- オリジナルモジュール記事の設定 --*/
+#mod-freearea-main .entry .entry-body-text {
+margin:0;
+}
+/*-- オリジナルモジュール下部の設定 --*/
+#mod-freearea-main .entry .entry-bottom {
+border:none;
+}
+/*-----------------------------------------------------------------
+
+------------------------------------------------------------------*/
+/*-- 読者機能 == custom/layout.css, 未更新.css --*/
+.mod-prof_btns {line-height: 1;/text-align:left;}
+.module .mod-prof_btns p {display: inline-block;float: left;margin:0px 3px 5px 0px !important;/display:inline;/zoom:1;}
+.module .mod-prof_btns .social_btns {display: inline-block;font-size: 0;/display:block;/zoom:1;/width: 50px;}
+.module .mod-prof_btns .social_btns div {display: block;float: left;margin: 0 2px 0 0;padding: 0;overflow: hidden;/display:inline;/zoom:1;}
+/* #main */
+#main .mod-btn, #main a.mod-btn:link, #main a.mod-btn:visited, #main a.mod-btn:hover {text-decoration: none !important;color: #FFF!important;/* padding: 10px; */}
+#main a.mod-btn:hover {cursor:pointer; }
+#main .mod-btn {
+display:inline-block;
+height: 17px;
+line-height: 17px;
+background-color: #31a6f7 !important ;
+-webkit-box-shadow: inset rgba(0,0,0,0.1) 0 -1px 2px;
+-moz-box-shadow: inset rgba(0,0,0,0.1) 0 -1px 2px;
+-ms-box-shadow: inset rgba(0,0,0,0.1) 0 -1px 2px;
+-o-box-shadow: inset rgba(0,0,0,0.1) 0 -1px 2px;
+box-shadow: inset rgba(0,0,0,0.1) 0 -1px 2px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+color: #FFF!important;
+vertical-align: text-top;
+letter-spacing:1px;
+/display:inline;
+/zoom:1;
+}
+#main .mod-btn:hover {
+background: #31a6f7;
+opacity: 0.6;
+}
+
+/*-- 2017　見出し調整 --*/
+.follower_blogtitle{margin-top:0;}
+/*-- 2017　見出し調整 --*/
+
+/*-- End//INDIVIDUAL CSS Document for goo blog modulized templates --*/

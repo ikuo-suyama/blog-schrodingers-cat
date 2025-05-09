@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* -------------------- */
+/* 共通 */
+/* -------------------- */
+#gooad-badge300_1,
+#gooad-badge300_4,
+#gooad-spbadge300_1,
+#gooad-spbadge300_2,
+#gooad-spbadge300_3,
+#gooad-spbadge300_4,
+#gooad-spbadge300_5,
+#gooad-spbadge300_6,
+#gooad-spbadge300_1w,
+#gooad-spbadge300_2w,
+#gooad-spbadge300_3w,
+#gooad-spbadge300_4w {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+/* -------------------- */
+/* PC */
+/* -------------------- */
+
+#gooad-badge160_1 {
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+#gooad-badge300_1 {
+    min-height: 250px;
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+/* ダブレク親 */
+div#gooad-badge345_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+    line-height: 0;
+    text-align: center;
+}
+
+/* ダブレク */
+div#gooad-badge300_3,
+div#gooad-mbadge300_3 {
+    min-height: 250px;
+    width: 300px;
+    margin: 0 0 16px;
+    text-align: center;
+}
+
+/* -------------------- */
+/* SP */
+/* -------------------- */
+
+.gooad_border:has(iframe) {
+    width: 100%;
+    padding: .5rem 0;
+    border-bottom: .1rem solid #d8dfe3;
+}
+
+#gooad-spbadge320_3,
+#gooad-spbadge320_4 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gooad-spbadge320_1w {
+    min-height: 50px;
+}
+
+#gooad-spbadge300_1w,
+#gooad-spbadge300_3w {
+    min-height: 250px;
+}
