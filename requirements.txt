@@ -1,2 +1,4 @@
 requests
-beautifulsoup4 
+beautifulsoup4
+playwright 
+boto3 
